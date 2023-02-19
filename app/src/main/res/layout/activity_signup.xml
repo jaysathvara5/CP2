@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/z"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/x"
+            android:layout_marginLeft="110dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sign Up"
+            android:textColor="@color/black"
+            android:textSize="45dp"/>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            android:elevation="25dp">
+
+            //Username
+
+            <EditText
+                android:id="@+id/signup_uname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:textSize="20dp"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:inputType="text"
+                 />
+            //Email
+
+            <EditText
+                android:id="@+id/signup_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:hint="Email"
+                android:padding="20dp"
+                android:textSize="20dp"
+                android:inputType="textEmailAddress" />
+
+            //password
+
+            <EditText
+                android:id="@+id/signup_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/white"
+                android:hint="Password"
+                android:textSize="20dp"
+                android:inputType="textPassword" />
+
+
+
+            //conform password
+
+            <EditText
+                android:id="@+id/signup_cpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/white"
+                android:hint="Conform Password"
+                android:textSize="20dp"
+                android:inputType="textPassword" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_700"
+            android:text="SignUp"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:elevation="25dp" />
+        <TextView
+            android:id="@+id/signup_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="Already user ? Login"
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</ScrollView>

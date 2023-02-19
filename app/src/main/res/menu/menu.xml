@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Home"
+        android:id="@+id/navHome"
+        android:icon="@drawable/ic_baseline_home_24"/>
+    <item android:title="ChatBot"
+        android:id="@+id/navbot"
+        android:icon="@drawable/ic_baseline_android_24"/>
+    <item
+        android:id="@+id/navProfile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profile" />
+</menu>

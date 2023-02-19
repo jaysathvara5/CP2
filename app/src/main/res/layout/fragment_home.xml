@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.FragmentHome">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:background="@drawable/topbg"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textColor="@color/textcolor"
+            android:gravity="left"
+            android:paddingLeft="8dp"
+            android:textStyle="bold"
+            android:paddingTop="5dp"
+            android:text="Hospital Chatbot"
+            android:textSize="35dp"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/scroll">
+
+            <Button
+                android:id="@+id/dentist"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@color/doctor"
+                android:text="Dentist"
+                android:textSize="25dp"
+                android:textColor="@color/textcolor"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:elevation="25dp" />
+            <Button
+                android:id="@+id/cardiologist"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@color/teal_200"
+                android:elevation="25dp"
+                android:text="Cardiologist"
+
+                android:textColor="@color/textcolor"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/audiologist"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@color/doctor"
+                android:text="Audiologist"
+                android:textColor="@color/textcolor"
+                android:textSize="25dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:elevation="25dp" />
+
+            <Button
+                android:id="@+id/orthopaedic"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@color/doctor"
+                android:elevation="25dp"
+                android:text="Orthopaedic"
+                android:textColor="@color/textcolor"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/psychiatrists"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@color/doctor"
+                android:elevation="25dp"
+                android:text="Psychiatrists"
+                android:textColor="@color/textcolor"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
